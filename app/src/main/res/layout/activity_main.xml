@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0299D5"
+    tools:context=".MainActivity"
+    tools:visibility="visible">
+
+
+    <Button
+        android:id="@+id/chnagePlayer"
+        android:layout_width="320dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#FFFB00"
+        android:fontFamily="@font/fruktur"
+        android:hapticFeedbackEnabled="true"
+        android:onClick="changePlayer"
+        android:text="CHANGE PLAYER"
+        android:textColor="#0E0101"
+        android:textSize="34dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/playerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="7dp"
+        android:ems="10"
+        android:hint="Enter Player Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/chnagePlayer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/goToLeaderboard"
+        android:layout_width="320dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="36dp"
+        android:backgroundTint="#FF0000"
+        android:fontFamily="@font/fruktur"
+        android:hapticFeedbackEnabled="true"
+        android:text="RESULTS"
+        android:textColor="#0E0000"
+        android:textSize="34dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/gameOver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="111dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="111dp"
+        android:fontFamily="@font/chewy"
+        android:text="GAME OVER"
+        android:textColor="#000000"
+        android:textSize="60sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/green"
+        android:layout_width="163dp"
+        android:layout_height="172dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#4DFF00"
+        android:textColor="#934E4E"
+        android:visibility="gone"
+        app:cornerRadius="50dp"
+        app:layout_constraintEnd_toStartOf="@+id/red"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/blue"
+        android:layout_width="163dp"
+        android:layout_height="172dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#0048FF"
+        android:visibility="gone"
+        app:cornerRadius="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/yellow"
+        app:layout_constraintTop_toBottomOf="@+id/red" />
+
+    <Button
+        android:id="@+id/red"
+        android:layout_width="163dp"
+        android:layout_height="172dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#FF0000"
+        android:visibility="gone"
+        app:cornerRadius="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/green"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/yellow"
+        android:layout_width="163dp"
+        android:layout_height="172dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#FFDD07"
+        android:visibility="gone"
+        app:cornerRadius="50dp"
+        app:layout_constraintEnd_toStartOf="@+id/blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/green" />
+
+    <TextView
+        android:id="@+id/level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="111dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="111dp"
+        android:fontFamily="@font/chewy"
+        android:text="SIMON"
+        android:textColor="#1A237E"
+        android:textSize="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/level3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="111dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="111dp"
+        android:fontFamily="@font/chewy"
+        android:text="SIMON"
+        android:textAlignment="center"
+        android:textColor="#1A237E"
+        android:textSize="45dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gameOver" />
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="320dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#1A237E"
+        android:fontFamily="@font/fruktur"
+        android:hapticFeedbackEnabled="true"
+        android:onClick="start"
+        android:text="PLAY"
+        android:textColor="#100101"
+        android:textSize="34dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/goToLeaderboard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="312dp"
+        android:layout_height="308dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="65dp"
+        android:scaleType="centerCrop"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/level"
+        app:srcCompat="@drawable/simonn" />
+
+    <ImageView
+        android:id="@+id/highscore"
+        android:layout_width="328dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/level3"
+        app:srcCompat="@drawable/highscore" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
